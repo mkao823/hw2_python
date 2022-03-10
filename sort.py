@@ -1,4 +1,4 @@
-def sort_list(myList):
+def sort_list(list):
     '''this is summary line
 
     now we can use this to describe program
@@ -6,15 +6,18 @@ def sort_list(myList):
     in sort list, n is length of input list
     
     ''' 
-    n = len(myList)
+    n = len(list)
     i = 0
     j = 0
     while i < n - 1:
         while j < n - i - 1:
-            if myList[j+1] < myList[j]:
-                temp = myList(j)
-                myList[j] = myList[j+1]
-                myList[j+1] = temp
+            if list[j+1] < list[j]:
+                temp = list(j)
+                list[j] = list[j+1]
+                list[j+1] = temp
             j+=1
         i+=1
-    return myList
+    return list
+            
+    
+

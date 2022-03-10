@@ -4,8 +4,8 @@ def calculate_time(func):
         timeOne = time.time()
         func()
         timeTwo = time.time()
-        delay = timeTwo - timeOne
-        print("Total Time %s" % delay)
+        difference = timeTwo - timeOne
+        print("Total Time %s" % difference)
     return wrapper
 
 @calculate_time

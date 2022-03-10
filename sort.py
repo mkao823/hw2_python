@@ -12,7 +12,7 @@ def sort_list(list):
     while i < n - 1:
         while j < n - i - 1:
             if list[j+1] < list[j]:
-                temp = list(j)
+                temp = list[j]
                 list[j] = list[j+1]
                 list[j+1] = temp
             j+=1

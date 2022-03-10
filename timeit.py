@@ -2,9 +2,9 @@ import time
 
 def calculate_time(func):
     def wrapper():
-        start = time.time()
+        begin = time.time()
         func()
-        end = time.time()
-        delay = end - start
+        term = time.time()
+        delay = term - begin
         print("Total Time ", delay)
     return wrapper

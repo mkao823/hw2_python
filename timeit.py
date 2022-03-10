@@ -6,5 +6,5 @@ def calculate_time(func):
         func()
         end = time.time()
         delay = end - start
-        print("Total Time " + delay)
+        print("Total Time ", delay)
     return wrapper

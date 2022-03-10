@@ -5,10 +5,11 @@ def calculate_time(func):
         func()
         term = time.time()
         delay = term - begin
-        print("Total Time", delay)
+        print("Total Time %s" % delay)
     return wrapper
 
 @calculate_time
-def run1():
-    return
+def run1(): 
+    print("")
+
 

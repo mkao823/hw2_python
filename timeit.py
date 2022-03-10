@@ -11,5 +11,4 @@ def calculate_time(func):
 @calculate_time
 def run1():
     return
-    
-run1()
+

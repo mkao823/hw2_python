@@ -12,6 +12,3 @@ def calculate_time(func):
 def run1(): 
     print("")
 
-run1()
-
-

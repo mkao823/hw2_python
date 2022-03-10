@@ -11,10 +11,10 @@ def sort_list(myList):
     j = 0
     while i < n - 1:
         while j < n - i - 1:
-            if myList[i] > myList[j]:
-                myList[j] = myList[i]
-
+            if myList[j+1] < myList[j]:
+                temp = myList(j)
+                myList[j] = myList[j+1]
+                myList[j+1] = temp
+            j+=1
+        i+=1
     return myList
-            
-    
-

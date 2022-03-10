@@ -6,7 +6,7 @@ def calculate_time(func):
         func()
         timeTwo = time.time()
         total = timeTwo - timeOne
-        print("Total Time %s" % total)
+        print("Total time %s" % total)
     return wrapper
 
 @calculate_time

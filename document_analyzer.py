@@ -1,18 +1,17 @@
 def sorter(nameOfFile):
     file = open(nameOfFile) 
-    words = {}
+    countWords = {}
     a = file.read()
     words = a.split()
     words.sort()
 
     for word in words:
-        if word in words:
-            words[word] += 1
+        if word in countWords:
+            countWords[word] += 1
         else:
-            words[word] = 1
-            
+            countWords[word] = 1
     index = 0
-    unique = sorted(words.items(), key = lambda x:x[1], reverse = True)
+    unique = sorted(countWords.items(), key = lambda x:x[1], reverse = True)
     unique = dict(unique)
 
     print("\r")
@@ -21,3 +20,7 @@ def sorter(nameOfFile):
         index += 1
         if(index == 5):
             break
+def call():
+    sorter('document.txt')
+
+call()
